@@ -1,19 +1,11 @@
 using System.Collections.Generic;
 namespace RoleplayGame
 {
-    public class Archer: ICharacter
+    public abstract class ACharacter : ICharacter
     {
-        private int health = 100;
+        public int health;
 
-        private List<IItem> items = new List<IItem>();
-
-        public Archer(string name)
-        {
-            this.Name = name;
-            
-            this.AddItem(new Bow());
-            this.AddItem(new Helmet());
-        }
+        public List<IItem> items = new List<IItem>();
 
         public string Name { get; set; }
         
@@ -69,7 +61,7 @@ namespace RoleplayGame
             }
         }
 
-        public void Cure()
+        public virtual void Cure()
         {
             this.Health = 100;
         }
@@ -83,5 +75,6 @@ namespace RoleplayGame
         {
             this.items.Remove(item);
         }
+        
     }
 }
