@@ -22,6 +22,14 @@ namespace Program
 
             AVillains Saruman = new EvilWizard("Saruman");
 
+            AVillains Surtur = new EvilWizard("Surtur");
+
+            AVillains Heracles = new EvilDwarf("Heracles");
+
+
+
+
+
 
             //Creo batalla.
             Battle firstBattle = new Battle("First Battle.");
@@ -29,6 +37,9 @@ namespace Program
             Battle LordofRings = new Battle("LordofRings");
 
             Battle Ragnarok = new Battle("Ragnarok");
+
+            Battle Coliseo = new Battle("Coliseo");
+
 
             //Añado quiénes pelearán.
             firstBattle.AddHeroes(Link);
@@ -38,14 +49,20 @@ namespace Program
             LordofRings.AddVillains(Saruman);
 
             Ragnarok.AddHeroes(Arturo);
+            Ragnarok.AddVillains(Surtur);
 
-;
+            Coliseo.AddHeroes(John);
+            Coliseo.AddVillains(Heracles);
+
+
             //Se pelean.
             firstBattle.CreateBattle();
             
             LordofRings.CreateBattle();
 
             Ragnarok.CreateBattle();
+
+            Coliseo.CreateBattle();
 
             
 
