@@ -12,6 +12,8 @@ namespace Program
 
             AHeroes Gandalf = new Wizard("Gandalf");
 
+            AHeroes John = new Dwarf("John");
+
             //Creo villano.
             AVillains Ganon = new EvilArcher("Ganondorf");
 
