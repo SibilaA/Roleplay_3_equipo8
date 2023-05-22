@@ -22,7 +22,6 @@ namespace Program
 
             AVillains Saruman = new EvilWizard("Saruman");
 
-            AVillains Surtur = new EvilKnight("Surtur");
 
             //Creo batalla.
             Battle firstBattle = new Battle("First Battle.");
@@ -39,7 +38,6 @@ namespace Program
             LordofRings.AddVillains(Saruman);
 
             Ragnarok.AddHeroes(Arturo);
-            Ragnarok.AddVillains(Surtur);
 
 ;
             //Se pelean.
