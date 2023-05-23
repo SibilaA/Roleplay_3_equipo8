@@ -6,10 +6,13 @@ namespace RoleplayGame
         public Knight(string name)
         {
             this.Name = name;
+            this.health = 100;
+
             
             this.AddItem(new Sword());
-            this.AddItem(new Armor());
             this.AddItem(new Shield());
+            this.VictoryPoints = 1;
+
         }
     }
 }

@@ -1,17 +1,17 @@
 using System.Collections.Generic;
+
 namespace RoleplayGame
 {
-    public class Dwarf: AHeroes
+    public class EvilDwarf : AVillains
     {
-
-        public Dwarf(string name)
+        public EvilDwarf(string name)
         {
             this.Name = name;
             this.health = 100;
             
             this.AddItem(new Axe());
-            this.AddItem(new Helmet());
+            this.AddItem(new Armor());
+            this.VictoryPoints = 1;
         }
-
     }
 }
