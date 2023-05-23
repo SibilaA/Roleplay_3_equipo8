@@ -22,7 +22,7 @@ namespace Program
 
             AVillains Saruman = new EvilWizard("Saruman");
 
-            AVillains Surtur = new EvilWizard("Surtur");
+            AVillains Surtur = new EvilKnight("Surtur");
 
             AVillains Heracles = new EvilDwarf("Heracles");
 
