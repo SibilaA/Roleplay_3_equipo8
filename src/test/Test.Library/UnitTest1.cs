@@ -1,7 +1,9 @@
+
 /*
 using NUnit.Framework;
 
-namespace Test.Library
+
+namespace RoleplayGame
 {
     public class Tests
     {
@@ -11,9 +13,20 @@ namespace Test.Library
         }
 
         [Test]
-        public void Test1()
+        public void AddItem()
         {
-            Assert.Pass();
+            AHeroes Gimli  = new Dwarf("Gimli");
+            Gimli.AñadirItem(Axe);
+            bool contiene = Gimli.items.ContainsValue(Axe);
+            Assert.IsFalse(contiene);
+        }
+
+        [Test]
+        public void RemoveItem()
+        {
+            Link.RemoveItem(Bow);
+            bool contiene = Link.items.ContainsValue(Bow);
+            Assert.IsFalse(contiene);
         }
     }
 }
