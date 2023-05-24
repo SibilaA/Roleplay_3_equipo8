@@ -11,7 +11,7 @@ namespace RoleplayGame
             
             this.AddItem(new Axe());
             this.AddItem(new Armor());
-            this.VictoryPoints = 1;
+            this.VictoryPoints = 2;
         }
     }
 }

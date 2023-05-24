@@ -9,9 +9,8 @@ namespace RoleplayGame
             this.Name = name;
             this.health = 100;
             
-            this.AddItem(new magicScepter());
-            this.AddItem(new magicRobe());
-            this.VictoryPoints = 1;
+            this.AddItem(new Staff());
+
         } 
 
         public void AddItem(IMagicalItem item)

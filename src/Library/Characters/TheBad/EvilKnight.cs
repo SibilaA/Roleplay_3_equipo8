@@ -10,7 +10,9 @@ namespace RoleplayGame
             this.health = 100;
             
             this.AddItem(new Sword());
+            this.AddItem(new Armor());
             this.AddItem(new Shield());
+            this.VictoryPoints = 2;
         }
     }
 }

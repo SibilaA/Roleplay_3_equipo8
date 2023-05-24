@@ -10,8 +10,8 @@ namespace RoleplayGame
             this.Name = name;
             this.health = 100;
             
-            this.AddItem(new magicRobe());
-            this.AddItem(new magicScepter());
+            this.AddItem(new Staff());
+            this.VictoryPoints = 3;
             
         }
 

@@ -8,6 +8,8 @@ namespace Program
         static void Main(string[] args)
         {
             //Creo héroe.
+            /*
+
             AHeroes Link = new Archer("Link");
 
             AHeroes Gandalf = new Wizard("Gandalf");
@@ -34,39 +36,41 @@ namespace Program
             //Creo batalla.
             Battle firstBattle = new Battle("First Battle.");
 
-            Battle LordofRings = new Battle("LordofRings");
-
-            Battle Ragnarok = new Battle("Ragnarok");
-
-            Battle Coliseo = new Battle("Coliseo");
-
-
             //Añado quiénes pelearán.
             firstBattle.AddHeroes(Link);
             firstBattle.AddVillains(Ganon);
 
-            LordofRings.AddHeroes(Gandalf);
-            LordofRings.AddVillains(Saruman);
+            firstBattle.AddHeroes(Gandalf);
+            firstBattle.AddVillains(Saruman);
 
-            Ragnarok.AddHeroes(Arturo);
-            Ragnarok.AddVillains(Surtur);
 
-            Coliseo.AddHeroes(John);
-            Coliseo.AddVillains(Heracles);
+            firstBattle.AddHeroes(Arturo);
+            firstBattle.AddVillains(Surtur);
+
+            firstBattle.AddHeroes(John);
+            firstBattle.AddVillains(Heracles);
 
 
             //Se pelean.
             firstBattle.CreateBattle();
             
-            LordofRings.CreateBattle();
+            */
 
-            Ragnarok.CreateBattle();
-
-            Coliseo.CreateBattle();
-
+            AHeroes John = new Dwarf("John");
+            AHeroes Arturo = new Knight("Arturo");
+            AVillains Ganon = new EvilArcher("Ganondorf");
+            AVillains Surtur = new EvilKnight("Surtur");
+            Battle firstBattle = new Battle("First Battle.");
+            firstBattle.AddHeroes(John);
+            firstBattle.AddHeroes(Arturo);
+            firstBattle.AddVillains(Ganon);
+            firstBattle.AddVillains(Surtur);
+            firstBattle.CreateBattle();
             
 
 
+
+            
 
         }
     }
